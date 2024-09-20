@@ -181,7 +181,11 @@ int main() {
     cout << "Masukkan teks yang ingin dienkripsi: ";
     cin >> plaintext;
 
-    cout << "Pilih metode enkripsi:\n1. Vigenere Cipher \n2. Playfair Cipher \n3. Hill Cipher \nPilihan Anda: ";
+    cout << "Pilih metode enkripsi:" << endl; 
+    cout << "1. Vigenere Cipher" << endl;
+    cout << "2. Playfair Cipher" << endl;
+    cout << "3. Hill Cipher" << endl;
+    cout << "Pilihan Anda: ";
     cin >> cipherChoice;
     cin.ignore(); // Membersihkan buffer input
     
