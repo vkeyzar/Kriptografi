@@ -188,6 +188,14 @@ int main() {
     cout << "Pilihan Anda: ";
     cin >> cipherChoice;
     cin.ignore(); // Membersihkan buffer input
+
+    if (cipherChoice > 3)
+    {
+        cout << "Pilihan Salah" <<  endl;
+        system("pause");
+        exit(0);
+
+    }
     
     int minKeyLength = (cipherChoice == 3) ? 9 : 12;
 
