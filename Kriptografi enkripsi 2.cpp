@@ -149,7 +149,7 @@ string hill(const string& plaintext, const vector<vector<int>>& key) {
             if (i + j < plaintext.length()) {
                 block[j] = toupper(plaintext[i + j]) - 'A';
             } else {
-                block[j] = 0; // Padding
+                block[j] = 0;
             }
         }
         
@@ -224,6 +224,6 @@ int main() {
         default:
             cout << "Pilihan tidak valid!" << endl;
     }
-
+    system("pause");
     return 0;
 }
